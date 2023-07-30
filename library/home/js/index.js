@@ -1,1 +1,1 @@
-function closeElement(e){document.querySelector(e).classList.remove("_active")}function openElement(e){document.querySelector(e).classList.add("_active")}window.addEventListener("DOMContentLoaded",()=>{}),console.log("Моя оценка");
+function closeElement(e){document.querySelector(e).classList.remove("_active")}function openElement(e){document.querySelector(e).classList.add("_active")}window.addEventListener("DOMContentLoaded",()=>{}),console.log("Моя оценка 100 баллов из 100");
