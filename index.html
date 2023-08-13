@@ -76,11 +76,11 @@
                 </div>
             </header>
             <main class="main">
-                <section class="welcome" id="welcome">
+               <section class="welcome" id="welcome">
                     <div class="welcome__gradient"></div>
                     <h2 class="welcome__title">Welcome <br> to the Brooklyn Library</h2>
                 </section>
-
+  
                 <section class="about section" id="about">
                     <div class="container">
                         <h2 class="section-title">About</h2>
@@ -92,9 +92,9 @@
                             <div class="about-slider__items">
                                 <img class="about-slider__img" src="./library/img/desktop/about-img1.jpg" width="450"
                                     height="560" alt="about img">
-                                <img class="about-slider__img" src="./library/img/desktop/about-img2.jpg" width="450"
+                                <img class="about-slider__img _hidden-mobile" src="./library/img/desktop/about-img2.jpg" width="450"
                                     height="560" alt="about img">
-                                <img class="about-slider__img" src="./library/img/desktop/about-img3.jpg" width="450"
+                                <img class="about-slider__img _hidden-mobile" src="./library/img/desktop/about-img3.jpg" width="450"
                                     height="560" alt="about img">
                                 <img class="about-slider__img" src="./library/img/desktop/about-img4.jpg" width="450"
                                     height="560" alt="about img" style="display: none;">
@@ -103,13 +103,20 @@
                             </div>
 
                             <div class="about-slider__buttons">
-                                <button class="btn about-slider__btn">
+                                <button class="btn about-slider__btn _active">
                                     <span class="about-slider__btn-circle"></span>
                                 </button>
                                 <button class="btn about-slider__btn">
                                     <span class="about-slider__btn-circle"></span>
                                 </button>
                                 <button class="btn about-slider__btn">
+                                    <span class="about-slider__btn-circle"></span>
+                                </button>
+
+                                <button class="btn about-slider__btn _visible-mobile">
+                                    <span class="about-slider__btn-circle"></span>
+                                </button>
+                                <button class="btn about-slider__btn _visible-mobile">
                                     <span class="about-slider__btn-circle"></span>
                                 </button>
                             </div>
@@ -422,7 +429,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> 
 
                 <section class="coffeShop section" id="coffeShop">
                     <div class="container">
@@ -556,7 +563,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <img src="./library/img/desktop/contacts-map.jpg" width="696" height="414" alt="map">
+                            <img class="contacts__map" src="./library/img/desktop/contacts-map.jpg" width="696" height="414" alt="map">
                         </div>
                     </div>
                 </section>
