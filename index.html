@@ -58,14 +58,29 @@
                             </ul>
                         </nav>
 
-                        <button class="btn header__profile-btn" id="profileBtn">
-                            <svg class="header__profile-btn-icon" width="28" height="28" viewBox="0 0 28 28"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </button>
+                        <div class="header-profile" id="header-profile">
+                            <button class="btn header-profile__btn" id="profileBtn">
+                                <svg class="header-profile__btn-icon" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+
+                            <div class="header-profile__menu" id="profileMenu">
+                                <p class="header-profile__menu-title">Profile</p>
+
+                                <ul class="header-profile__menu-list">
+                                    <li class="header-profile__menu-item">
+                                        <button class="btn header-profile__menu-btn">Log In</button>
+                                    </li>
+                                    <li class="header-profile__menu-item">
+                                        <button class="btn header-profile__menu-btn">Register</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <button class="btn header__buger-btn" id="headerBurgerBtn">
                             <svg width="45" height="22" viewBox="0 0 45 22" fill="currentColor">
@@ -91,54 +106,51 @@
                             cozy coffee shop inside </p>
 
                         <div class="about-slider">
-                            <div class="about-slider__items">
-                                <img class="about-slider__img" src="./library/img/desktop/about-img1.jpg" width="450"
-                                    height="560" alt="about img">
-                                <img class="about-slider__img _hidden-mobile" src="./library/img/desktop/about-img2.jpg"
-                                    width="450" height="560" alt="about img">
-                                <img class="about-slider__img _hidden-mobile" src="./library/img/desktop/about-img3.jpg"
-                                    width="450" height="560" alt="about img">
-                                <img class="about-slider__img" src="./library/img/desktop/about-img4.jpg" width="450"
-                                    height="560" alt="about img" style="display: none;">
-                                <img class="about-slider__img" src="./library/img/desktop/about-img5.jpg" width="450"
-                                    height="560" alt="about img" style="display: none;">
-                            </div>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="about-slider__img" src="./library/img/desktop/about-img1.jpg"
+                                            width="450" height="560" alt="about img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="about-slider__img"
+                                            src="./library/img/desktop/about-img2.jpg" width="450" height="560"
+                                            alt="about img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="about-slider__img"
+                                            src="./library/img/desktop/about-img3.jpg" width="450" height="560"
+                                            alt="about img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="about-slider__img" src="./library/img/desktop/about-img4.jpg"
+                                            width="450" height="560" alt="about img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="about-slider__img" src="./library/img/desktop/about-img5.jpg"
+                                            width="450" height="560" alt="about img">
+                                    </div>
+                                </div>
+                                <div class="about-slider__arrows">
+                                    <button class="btn about-slider__arrow-btn about-slider__arrow-btn--left">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
 
-                            <div class="about-slider__arrows _visible-mobile">
-                                <button class="btn about-slider__arrow-btn">
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
+                                    </button>
+                                    <button class="btn about-slider__arrow-btn about-slider__arrow-btn--right">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
 
-                                </button>
-                                <button class="btn about-slider__arrow-btn">
-                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <div class="about-slider__buttons">
-                                <button class="btn about-slider__btn _active">
-                                    <span class="about-slider__btn-circle"></span>
-                                </button>
-                                <button class="btn about-slider__btn">
-                                    <span class="about-slider__btn-circle"></span>
-                                </button>
-                                <button class="btn about-slider__btn">
-                                    <span class="about-slider__btn-circle"></span>
-                                </button>
-
-                                <button class="btn about-slider__btn _visible-mobile">
-                                    <span class="about-slider__btn-circle"></span>
-                                </button>
-                                <button class="btn about-slider__btn _visible-mobile">
-                                    <span class="about-slider__btn-circle"></span>
-                                </button>
+                                <div class="about-slider__paginations">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,7 +163,7 @@
                         <h3 class="favorites__subtitle">Pick favorites of season</h3>
                         <form class="favorites-filters" action="#">
                             <label class="favorites-filters__label _active">
-                                <input class="favorites-filters__input" type="radio" name="favorite" value="Winter">
+                                <input class="favorites-filters__input" type="radio" checked name="favorite" value="Winter">
                                 Winter
                             </label>
 
@@ -172,7 +184,7 @@
                         </form>
 
                         <div class="favorites__list">
-                            <div class="product-card">
+                            <div class="product-card" data-card-role="Winter">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img1.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -190,7 +202,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card">
+                            <div class="product-card" data-card-role="Winter">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img2.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -207,7 +219,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card">
+                            <div class="product-card" data-card-role="Winter">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img3.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -225,7 +237,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card">
+                            <div class="product-card" data-card-role="Winter">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img4.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -238,11 +250,11 @@
                                         changed around them.
                                     </p>
 
-                                    <button class="btn btn-main" disabled>Own</button>
+                                    <button class="btn btn-main">Buy</button>
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Spring" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img5.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -258,7 +270,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Spring" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img6.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -274,7 +286,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Spring" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img7.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -290,7 +302,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Spring" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img8.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -307,7 +319,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Summer" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img9.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -324,7 +336,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Summer" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img10.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -342,7 +354,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Summer" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img11.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -360,7 +372,7 @@
 
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Summer" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img12.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -378,7 +390,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Autumn" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img13.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -396,7 +408,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Autumn" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img14.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -413,7 +425,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Autumn" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img15.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -431,7 +443,7 @@
                                 </div>
                             </div>
 
-                            <div class="product-card" style="display: none;">
+                            <div class="product-card" data-card-role="Autumn" style="display: none;">
                                 <img class="product-card__img" width="450" height="560"
                                     src="./library/img/desktop/favorites-item-img16.jpg" alt="product card img">
                                 <div class="product-card__inner">
@@ -687,7 +699,8 @@
             </div>
         </footer>
     </div>
-    <script src="library/home/js/index.js"></script>
+    <script src="./library/base/js/lib.js"></script>
+    <script src="./library/home/js/index.js"></script>
 </body>
 
 </html>
