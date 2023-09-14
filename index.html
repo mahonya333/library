@@ -21,6 +21,89 @@
 <body>
 
     <div class="site-wrapper">
+        <div class="modal" id="modalRegister">
+            <div class="modal-background js-modal-background"></div>
+            <div class="modal__card">
+                <p class="modal__title">Register</p>
+
+                <form class="modal__form" action="#">
+                    <label class="modal__form-label">
+                        <span class="modal__form-label-text">First name</span>
+                        <input class="modal__form-input" type="text" required>
+                    </label>
+
+                    <label class="modal__form-label">
+                        <span class="modal__form-label-text">Last name</span>
+                        <input class="modal__form-input" type="text" required>
+                    </label>
+
+                    <label class="modal__form-label">
+                        <span class="modal__form-label-text">E-mail</span>
+                        <input class="modal__form-input" type="email" required>
+                    </label>
+
+                    <label class="modal__form-label">
+                        <span class="modal__form-label-text">Password</span>
+                        <input class="modal__form-input" type="text" required>
+                    </label>
+
+                    <div class="modal__form-submit">
+                        <button class="btn btn-main">Sign Up</button>
+                    </div>
+
+                </form>
+
+                <div class="modal__card-footer">
+                    <p class="modal__card-footer-question">Already have an account?</p>
+                    <button class="btn modal__card-footer-btn js-open-login-modal">Login</button>
+                </div>
+
+                <button class="btn modal__btn-close js-modal-btn-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <path d="M2 16.8507L17 2.00003" stroke="#0C0C0E" stroke-width="3" />
+                        <path d="M2 2.14926L17 17" stroke="#0C0C0E" stroke-width="3" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="modal" id="modalLogin">
+            <div class="modal-background js-modal-background"></div>
+            <div class="modal__card">
+                <p class="modal__title">Login</p>
+
+                <form class="modal__form" action="#">
+                    <label class="modal__form-label">
+                        <span class="modal__form-label-text">E-mail or readers card</span>
+                        <input class="modal__form-input" type="text" required>
+                    </label>
+
+                    <label class="modal__form-label">
+                        <span class="modal__form-label-text">Password</span>
+                        <input class="modal__form-input" type="text" required>
+                    </label>
+
+                    <div class="modal__form-submit">
+                        <button class="btn btn-main">Log In</button>
+                    </div>
+
+                </form>
+
+                <div class="modal__card-footer">
+                    <p class="modal__card-footer-question">Don’t have an account?</p>
+                    <button class="btn modal__card-footer-btn js-open-register-modal">Register</button>
+                </div>
+
+                <button class="btn modal__btn-close js-modal-btn-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <path d="M2 16.8507L17 2.00003" stroke="#0C0C0E" stroke-width="3" />
+                        <path d="M2 2.14926L17 17" stroke="#0C0C0E" stroke-width="3" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
         <div class="site-content">
             <header class="header">
                 <div class="container">
@@ -73,10 +156,10 @@
 
                                 <ul class="header-profile__menu-list">
                                     <li class="header-profile__menu-item">
-                                        <button class="btn header-profile__menu-btn">Log In</button>
+                                        <button class="btn header-profile__menu-btn js-open-login-modal">Log In</button>
                                     </li>
                                     <li class="header-profile__menu-item">
-                                        <button class="btn header-profile__menu-btn">Register</button>
+                                        <button class="btn header-profile__menu-btn js-open-register-modal">Register</button>
                                     </li>
                                 </ul>
                             </div>
@@ -113,14 +196,12 @@
                                             width="450" height="560" alt="about img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="about-slider__img"
-                                            src="./library/img/desktop/about-img2.jpg" width="450" height="560"
-                                            alt="about img">
+                                        <img class="about-slider__img" src="./library/img/desktop/about-img2.jpg"
+                                            width="450" height="560" alt="about img">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img class="about-slider__img"
-                                            src="./library/img/desktop/about-img3.jpg" width="450" height="560"
-                                            alt="about img">
+                                        <img class="about-slider__img" src="./library/img/desktop/about-img3.jpg"
+                                            width="450" height="560" alt="about img">
                                     </div>
                                     <div class="swiper-slide">
                                         <img class="about-slider__img" src="./library/img/desktop/about-img4.jpg"
@@ -163,7 +244,8 @@
                         <h3 class="favorites__subtitle">Pick favorites of season</h3>
                         <form class="favorites-filters" action="#">
                             <label class="favorites-filters__label _active">
-                                <input class="favorites-filters__input" type="radio" checked name="favorite" value="Winter">
+                                <input class="favorites-filters__input" type="radio" checked name="favorite"
+                                    value="Winter">
                                 Winter
                             </label>
 
@@ -198,7 +280,7 @@
                                         protagonist. Not for the faint of heart.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -215,7 +297,7 @@
                                         quaint town in upstate New York and befriends a beautiful witch.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -233,7 +315,7 @@
                                         significance—an inspired introduction to Dante's main themes.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -250,7 +332,7 @@
                                         changed around them.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -266,7 +348,7 @@
                                         beauty and danger and loss of innocence that is youth.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -282,7 +364,7 @@
                                         expansive and intimate, resulting in a lyrical indictment of the way things are.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -298,7 +380,7 @@
                                         of displacement and belonging, all in one form-defying package of spare prose.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -315,7 +397,7 @@
                                         to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -332,7 +414,7 @@
                                         damage their oil fields did to the Amazon and her people
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -350,7 +432,7 @@
                                         Including 10 More Years of Business Unusual.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -367,7 +449,7 @@
                                         divisive politics.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
 
                             </div>
@@ -386,7 +468,7 @@
                                         and healers.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -404,7 +486,7 @@
                                         communicate identity.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -421,7 +503,7 @@
                                         saved a quarter of a million refugees from the Armenian Genocide
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -439,7 +521,7 @@
                                         Henderson?
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
 
@@ -456,7 +538,7 @@
                                         gods from their wounds.
                                     </p>
 
-                                    <button class="btn btn-main">Buy</button>
+                                    <button class="btn btn-main js-open-login-modal">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -628,8 +710,8 @@
                                 <p class="libraryCard__content-text">You will be able to see a reader card after logging
                                     into account or you can register a new account</p>
                                 <div class="libraryCard__content-buttons">
-                                    <button class="btn btn-main">Sign Up</button>
-                                    <button class="btn btn-main">Log in</button>
+                                    <button class="btn btn-main js-open-register-modal">Sign Up</button>
+                                    <button class="btn btn-main js-open-login-modal">Log in</button>
                                 </div>
                             </div>
                         </div>
